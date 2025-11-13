@@ -4,12 +4,9 @@
 def ispalindrome(p):
 
     # votre code ici
-    i = 0
-    while i < len(p)//2 :
-        if p[i] != p[len(p)-1-i] :
-            return False
-        i += 1
-    return True
+    g = p[0:len(p)//2] 
+    d = p[(len(p)+1)//2:] 
+    return g == d[::-1]
 
 #### Fonction principale
 
